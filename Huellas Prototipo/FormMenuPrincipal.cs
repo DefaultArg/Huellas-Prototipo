@@ -67,7 +67,7 @@ namespace Huellas_Prototipo
 
         private void panelBarraTitulo_MouseMove(object sender, MouseEventArgs e)
         {
-            // ReleaseCapture();
+            //ReleaseCapture();
             //SendMessage(this.Handle, 0x112, 0x112, 0);
 
 
@@ -83,9 +83,13 @@ namespace Huellas_Prototipo
             {
                 Formulario = new MiForm();
                 Formulario.TopLevel = false;
+                //Formulario.FormBorderStyle - FormBorderStyle;
+                //Formulario.Dock - DockStyle.Fill();
                 panelFormulario.Controls.Add(Formulario);
                 panelFormulario.Tag = Formulario;
                 Formulario.Show();
+                Formulario.BringToFront();
+                
             }
 
 
@@ -94,7 +98,17 @@ namespace Huellas_Prototipo
                 Formulario.BringToFront();
             }
 
-        } 
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ListadoAnimales>();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ListadoAdoptantes>();
+
+        }
     }
 }
