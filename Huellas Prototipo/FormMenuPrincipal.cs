@@ -88,6 +88,7 @@ namespace Huellas_Prototipo
                 Formulario.Show();
             }
 
+
             else
             {
                 Formulario.BringToFront();
