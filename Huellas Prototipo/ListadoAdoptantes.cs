@@ -25,7 +25,7 @@ namespace Huellas_Prototipo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult = MessageBox.Show("¿Desea eliminar este dato?", "No", MessageBoxButtons.YesNo);
+            DialogResult = MessageBox.Show("¿Desea eliminar este dato?", "Atención", MessageBoxButtons.YesNo);
         }
 
         private void button3_Click(object sender, EventArgs e)

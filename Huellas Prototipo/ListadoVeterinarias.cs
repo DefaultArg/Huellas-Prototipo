@@ -10,22 +10,17 @@ using System.Windows.Forms;
 
 namespace Huellas_Prototipo
 {
-    public partial class ListadoAnimales : Form
+    public partial class ListadoVeterinarias : Form
     {
-        public ListadoAnimales()
+        public ListadoVeterinarias()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form FormAlta = new AltaAnimales();
+            Form FormAlta = new AltaVeterinaria();
             FormAlta.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-          
         }
 
         private void button2_Click(object sender, EventArgs e)
