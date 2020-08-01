@@ -110,5 +110,10 @@ namespace Huellas_Prototipo
             AbrirFormulario<ListadoAdoptantes>();
 
         }
+
+        private void panelFormulario_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

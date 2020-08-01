@@ -32,15 +32,16 @@
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelFormulario = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panelContenedor.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
@@ -70,9 +71,11 @@
             this.panelFormulario.Name = "panelFormulario";
             this.panelFormulario.Size = new System.Drawing.Size(1133, 639);
             this.panelFormulario.TabIndex = 2;
+            this.panelFormulario.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFormulario_Paint);
             // 
             // panelMenu
             // 
+            this.panelMenu.Controls.Add(this.button5);
             this.panelMenu.Controls.Add(this.button4);
             this.panelMenu.Controls.Add(this.button3);
             this.panelMenu.Controls.Add(this.button2);
@@ -82,6 +85,44 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(250, 639);
             this.panelMenu.TabIndex = 1;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(3, 375);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(250, 43);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Lista Negra";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(0, 221);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(250, 43);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Listado de Transito";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(0, 157);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(250, 43);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Listado de adoptantes";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 66);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(250, 43);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Listado de animales";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelBarraTitulo
             // 
@@ -133,43 +174,14 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // button1
+            // button5
             // 
-            this.button1.Location = new System.Drawing.Point(0, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Listado de animales";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(0, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 43);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Listado de adoptantes";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 245);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 43);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Listado de Transito";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(3, 375);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 43);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Lista Negra";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(0, 283);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(250, 43);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Veterinarias";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // FormMenuPrincipal
             // 
@@ -207,6 +219,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
     }
 }
 
