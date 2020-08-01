@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Huellas_Prototipo
 {
-    public partial class ListadoAdoptantes : Form
+    public partial class AltaAnimales : Form
     {
-        public ListadoAdoptantes()
+        public AltaAnimales()
         {
             InitializeComponent();
         }
 
+        private void AltaAnimales_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            DialogResult = MessageBox.Show("Mascota cargada con exito!", "", MessageBoxButtons.OK);
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
         {
 
         }

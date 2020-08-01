@@ -44,6 +44,9 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnBaja = new System.Windows.Forms.Button();
+            this.btnAlta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,7 +115,7 @@
             this.Column9});
             this.dataGridView1.Location = new System.Drawing.Point(12, 59);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(843, 391);
+            this.dataGridView1.Size = new System.Drawing.Size(1179, 549);
             this.dataGridView1.TabIndex = 9;
             // 
             // ID
@@ -165,17 +168,51 @@
             this.Column9.HeaderText = "Estado";
             this.Column9.Name = "Column9";
             // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(513, 23);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 12;
+            this.btnModificar.Text = "Editar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnBaja
+            // 
+            this.btnBaja.Location = new System.Drawing.Point(417, 22);
+            this.btnBaja.Name = "btnBaja";
+            this.btnBaja.Size = new System.Drawing.Size(75, 23);
+            this.btnBaja.TabIndex = 11;
+            this.btnBaja.Text = "Eliminar";
+            this.btnBaja.UseVisualStyleBackColor = true;
+            this.btnBaja.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnAlta
+            // 
+            this.btnAlta.Location = new System.Drawing.Point(323, 22);
+            this.btnAlta.Name = "btnAlta";
+            this.btnAlta.Size = new System.Drawing.Size(75, 23);
+            this.btnAlta.TabIndex = 10;
+            this.btnAlta.Text = "Agregar";
+            this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ListadoAnimales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 462);
+            this.ClientSize = new System.Drawing.Size(1027, 620);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnBaja);
+            this.Controls.Add(this.btnAlta);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Fallecidos);
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.checkBox6);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListadoAnimales";
             this.Text = "ListadoAnimales";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -202,5 +239,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnBaja;
+        private System.Windows.Forms.Button btnAlta;
     }
 }
