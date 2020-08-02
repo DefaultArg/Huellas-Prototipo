@@ -115,5 +115,15 @@ namespace Huellas_Prototipo
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ListadoVeterinarias>();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ListadoTransito>();
+        }
     }
 }

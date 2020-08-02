@@ -34,9 +34,6 @@
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.Fallecidos = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnBaja = new System.Windows.Forms.Button();
-            this.btnAlta = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,13 +48,18 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnBaja = new System.Windows.Forms.Button();
+            this.btnAlta = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Buscar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.Location = new System.Drawing.Point(226, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
@@ -66,7 +68,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(93, 12);
+            this.checkBox1.Location = new System.Drawing.Point(307, 11);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(77, 17);
             this.checkBox1.TabIndex = 1;
@@ -76,7 +78,7 @@
             // checkBox6
             // 
             this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(93, 36);
+            this.checkBox6.Location = new System.Drawing.Point(307, 35);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(93, 17);
             this.checkBox6.TabIndex = 6;
@@ -86,7 +88,7 @@
             // checkBox7
             // 
             this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(192, 13);
+            this.checkBox7.Location = new System.Drawing.Point(406, 12);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(76, 17);
             this.checkBox7.TabIndex = 7;
@@ -96,7 +98,7 @@
             // Fallecidos
             // 
             this.Fallecidos.AutoSize = true;
-            this.Fallecidos.Location = new System.Drawing.Point(192, 37);
+            this.Fallecidos.Location = new System.Drawing.Point(406, 36);
             this.Fallecidos.Name = "Fallecidos";
             this.Fallecidos.Size = new System.Drawing.Size(73, 17);
             this.Fallecidos.TabIndex = 8;
@@ -125,36 +127,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1179, 549);
             this.dataGridView1.TabIndex = 9;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.Location = new System.Drawing.Point(513, 23);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
-            this.btnModificar.TabIndex = 12;
-            this.btnModificar.Text = "Editar";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnBaja
-            // 
-            this.btnBaja.Location = new System.Drawing.Point(417, 22);
-            this.btnBaja.Name = "btnBaja";
-            this.btnBaja.Size = new System.Drawing.Size(75, 23);
-            this.btnBaja.TabIndex = 11;
-            this.btnBaja.Text = "Eliminar";
-            this.btnBaja.UseVisualStyleBackColor = true;
-            this.btnBaja.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnAlta
-            // 
-            this.btnAlta.Location = new System.Drawing.Point(323, 22);
-            this.btnAlta.Name = "btnAlta";
-            this.btnAlta.Size = new System.Drawing.Size(75, 23);
-            this.btnAlta.TabIndex = 10;
-            this.btnAlta.Text = "Agregar";
-            this.btnAlta.UseVisualStyleBackColor = true;
-            this.btnAlta.Click += new System.EventHandler(this.button1_Click);
             // 
             // ID
             // 
@@ -226,11 +198,59 @@
             this.Column9.HeaderText = "Estado";
             this.Column9.Name = "Column9";
             // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(929, 22);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 12;
+            this.btnModificar.Text = "Editar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnBaja
+            // 
+            this.btnBaja.Location = new System.Drawing.Point(833, 21);
+            this.btnBaja.Name = "btnBaja";
+            this.btnBaja.Size = new System.Drawing.Size(75, 23);
+            this.btnBaja.TabIndex = 11;
+            this.btnBaja.Text = "Eliminar";
+            this.btnBaja.UseVisualStyleBackColor = true;
+            this.btnBaja.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnAlta
+            // 
+            this.btnAlta.Location = new System.Drawing.Point(739, 21);
+            this.btnAlta.Name = "btnAlta";
+            this.btnAlta.Size = new System.Drawing.Size(75, 23);
+            this.btnAlta.TabIndex = 10;
+            this.btnAlta.Text = "Agregar";
+            this.btnAlta.UseVisualStyleBackColor = true;
+            this.btnAlta.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(60, 23);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(136, 20);
+            this.textBox3.TabIndex = 18;
+            // 
+            // Buscar
+            // 
+            this.Buscar.AutoSize = true;
+            this.Buscar.Location = new System.Drawing.Point(11, 27);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(43, 13);
+            this.Buscar.TabIndex = 17;
+            this.Buscar.Text = "Buscar:";
+            // 
             // ListadoAnimales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 620);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Buscar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnBaja);
             this.Controls.Add(this.btnAlta);
@@ -274,5 +294,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label Buscar;
     }
 }
