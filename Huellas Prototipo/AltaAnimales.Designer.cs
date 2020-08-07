@@ -32,7 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -41,7 +40,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -102,16 +100,6 @@
             this.label4.Size = new System.Drawing.Size(56, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Color:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(150, 488);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Raza:";
             // 
             // label6
             // 
@@ -184,13 +172,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(162, 20);
             this.textBox3.TabIndex = 12;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(252, 490);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 20);
-            this.textBox4.TabIndex = 13;
             // 
             // comboBox2
             // 
@@ -382,7 +363,6 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox1);
@@ -391,7 +371,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -412,7 +391,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -421,7 +399,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

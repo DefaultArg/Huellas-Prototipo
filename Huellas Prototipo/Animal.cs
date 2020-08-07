@@ -16,5 +16,10 @@ namespace Huellas_Prototipo
         {
             InitializeComponent();
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
