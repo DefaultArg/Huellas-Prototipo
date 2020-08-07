@@ -125,7 +125,7 @@
             this.Column9});
             this.dataGridView1.Location = new System.Drawing.Point(12, 59);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1179, 549);
+            this.dataGridView1.Size = new System.Drawing.Size(1109, 568);
             this.dataGridView1.TabIndex = 9;
             // 
             // ID
@@ -248,7 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 620);
+            this.ClientSize = new System.Drawing.Size(1133, 639);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.btnModificar);
