@@ -32,5 +32,11 @@ namespace Huellas_Prototipo
         {
             DialogResult = MessageBox.Show("¿Desea eliminar este dato?", "Atención", MessageBoxButtons.YesNo);
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form Animals = new Animal();
+            Animals.Show();
+        }
     }
 }

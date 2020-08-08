@@ -125,5 +125,10 @@ namespace Huellas_Prototipo
         {
             AbrirFormulario<ListadoTransito>();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<ListadoListaNegra>();
+        }
     }
 }

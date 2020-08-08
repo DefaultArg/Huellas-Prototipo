@@ -34,10 +34,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Buscar = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +43,10 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Buscar = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(617, 20);
+            this.button3.Location = new System.Drawing.Point(1049, 19);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 14;
@@ -77,7 +77,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(527, 19);
+            this.button2.Location = new System.Drawing.Point(959, 18);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 13;
@@ -87,7 +87,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(432, 20);
+            this.button1.Location = new System.Drawing.Point(864, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
@@ -113,38 +113,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(1116, 571);
             this.dataGridView2.TabIndex = 11;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(-88, -39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(10, 20);
-            this.textBox2.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-134, -36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Buscar";
-            // 
-            // Buscar
-            // 
-            this.Buscar.AutoSize = true;
-            this.Buscar.Location = new System.Drawing.Point(12, 24);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(43, 13);
-            this.Buscar.TabIndex = 15;
-            this.Buscar.Text = "Buscar:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(61, 20);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 20);
-            this.textBox3.TabIndex = 16;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -190,6 +158,38 @@
             // 
             this.dataGridViewTextBoxColumn7.HeaderText = "Celular";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(-88, -39);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(10, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(-134, -36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Buscar";
+            // 
+            // Buscar
+            // 
+            this.Buscar.AutoSize = true;
+            this.Buscar.Location = new System.Drawing.Point(12, 24);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(43, 13);
+            this.Buscar.TabIndex = 15;
+            this.Buscar.Text = "Buscar:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(61, 20);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(136, 20);
+            this.textBox3.TabIndex = 16;
             // 
             // ListadoVeterinarias
             // 

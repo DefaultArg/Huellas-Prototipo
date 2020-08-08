@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Huellas_Prototipo
 {
-    public partial class ListadoListaNegra : Form
+    public partial class AltaListaNegra : Form
     {
-        public ListadoListaNegra()
+        public AltaListaNegra()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form FormAlta = new AltaListaNegra();
-            FormAlta.Show();
-        }
-
-
     }
 }

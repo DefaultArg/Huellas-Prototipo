@@ -58,6 +58,12 @@
     <Compile Include="AltaAnimales.Designer.cs">
       <DependentUpon>AltaAnimales.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaListaNegra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaListaNegra.Designer.cs">
+      <DependentUpon>AltaListaNegra.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListadoListaNegra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AltaAnimales.resx">
       <DependentUpon>AltaAnimales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaListaNegra.resx">
+      <DependentUpon>AltaListaNegra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoListaNegra.resx">
       <DependentUpon>ListadoListaNegra.cs</DependentUpon>
